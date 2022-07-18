@@ -97,4 +97,15 @@ var user = {
     };
     // მეთოდის გამოძახება
     user.display();
-    
+    /////
+    var user = {
+        "name": "Tom",
+        "age": 26,
+        "display": function () {
+        console.log(user.name);
+        console.log(user.age);
+        }
+        };
+        // მეთოდის გამოძახება
+        user.display();
+        
