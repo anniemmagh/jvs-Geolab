@@ -75,3 +75,14 @@
 // )/// stringand - '' tu vwert, miayolebs ertmanets
 
 for(i=0; i < 10; i++) { if ((i % 7) == 0) { print("Money") } else if ((i % 5) == 0) { print("Dolly") } }
+///
+var user = {};
+user["name"] = "Tom";
+user["age"] = 26;
+user["display"] = function(){     
+console.log(user.name);
+console.log(user.age);
+};
+
+// მეთოდის გამოძახება
+user["display"]();
