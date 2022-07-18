@@ -132,3 +132,17 @@ console.log(user.age);
 console.log(user.name); // Tom
 delete user.name; // წავშალოთ თვისება
 console.log(user.name); // undefined
+////////
+var country = {
+    name: "გერმანია",
+    language: "გერმანული",
+    capital: {
+    name: "ბერლინი",
+    population: 3375000,
+    year: 1237
+    }
+    };
+    console.log("დედაქალაქი: " + country.capital.name); // Берлин
+    console.log("მოსახლეობა: " + country["capital"]["population"]); // 3375000
+    console.log("დაარსების წელი: " + country.capital["year"]); // 1237
+    
