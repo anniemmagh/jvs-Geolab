@@ -120,4 +120,15 @@ var user = {
             };
             console.log(user["full name"]);
             user["display info"]();
-            
+            ///////
+            var user = {};
+user.name = "Tom";
+user.age = 26;
+user.display = function () {
+console.log(user.name);
+console.log(user.age);
+};
+
+console.log(user.name); // Tom
+delete user.name; // წავშალოთ თვისება
+console.log(user.name); // undefined
