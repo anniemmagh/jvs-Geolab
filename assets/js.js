@@ -86,3 +86,15 @@ console.log(user.age);
 
 // მეთოდის გამოძახება
 user["display"]();
+////
+var user = {
+    name: "Tom",
+    age: 26,
+    display: function () {
+    console.log(this.name);
+    console.log(this.age);
+    }
+    };
+    // მეთოდის გამოძახება
+    user.display();
+    
