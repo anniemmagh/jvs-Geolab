@@ -169,4 +169,15 @@ var country = {
     document.write("<h3>შვეიცარიის ქალაქებია</h3>");
     for (var i = 0; i < country.cities.length; i++)
     document.write(country.cities[i].name + "<br/>");
-    
+////////////
+var user = {};
+user.name = "Tom";
+user.age = 26;
+user.display = function () {
+console.log(user.name);
+console.log(user.age);
+};
+var hasNameProp = "name" in user;
+console.log(hasNameProp); // true - თვისება name უკვე არსებობს user ობიექტში
+var hasWeightProp = "weight" in user;
+console.log(hasWeightProp); // false - user ობიექტში არაა თვისება ან მეთოდი weight
