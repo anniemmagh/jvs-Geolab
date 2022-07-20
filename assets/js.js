@@ -199,3 +199,14 @@ user.display = function () {
 for (var key in user) {
     console.log(key + " : " + user[key]);
 }
+///
+function createUser(pName, pAge) {
+    return {
+    name: pName,
+    age: pAge,
+    displayInfo: function() {
+    document.write("სახელი: " + this.name + " ასაკი: " + this.age + "<br/>");
+    }
+    };
+    };
+    
