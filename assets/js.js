@@ -188,3 +188,14 @@ var hasDisplayProp = user.hasOwnProperty('display');
 console.log(hasDisplayProp); // true
 var hasWeightProp = user.hasOwnProperty('weight');
 console.log(hasWeightProp); // false
+////////////////
+var user = {};
+user.name = "Tom";
+user.age = 26;
+user.display = function () {
+    console.log(user.name);
+    console.log(user.age);
+};
+for (var key in user) {
+    console.log(key + " : " + user[key]);
+}
