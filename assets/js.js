@@ -209,4 +209,9 @@ function createUser(pName, pAge) {
     }
     };
     };
+    var tom = createUser("Tom", 26);
+tom.displayInfo();
+var alice = createUser("Alice", 24);
+alice.displayInfo();
+
     
