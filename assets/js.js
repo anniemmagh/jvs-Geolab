@@ -209,9 +209,34 @@ function createUser(pName, pAge) {
     }
     };
     };
+    ///////////
     var tom = createUser("Tom", 26);
 tom.displayInfo();
 var alice = createUser("Alice", 24);
 alice.displayInfo();
-
+//////////
+function createUser(pName, pAge) {
+    return {
+    name: pName,
+    age: pAge,
+    displayInfo: function () {
+    document.write("სახელი: " + this.name + ", ასაკი: " + this.age + "<br/>");
+    },
+    driveCar: function (car) {
+    document.write(this.name + " ატარებს მანქანას მარკით " + car.name + "<br/>");
+    }
+    };
+    };
+    
+    function createCar(mName, mYear) {
+    return {
+    name: mName,
+    year: mYear
+    };
+    };
+    var tom = createUser("ტომი", 26);
+    tom.displayInfo();
+    var bently = createCar("ბენტლი", 2004);
+    tom.driveCar(bently);
+    
     
