@@ -74,3 +74,7 @@
 //     '3'+'4'
 // )/// stringand - '' tu vwert, miayolebs ertmanets
 
+var stubborn = "stubborn";
+for (var i=0; ;i++){
+    console.log ("you're stubborn")
+}
